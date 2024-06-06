@@ -21,6 +21,7 @@ public class Operators{
                 maxExperience = 750;
 
                 dialog = new MinakoDialogProvider();
+                portraitBust = "human-resources-department-minako-portrait-bust";
 
                 abilities(
                         new OperatorAbility("micromanage", () -> Icon.defense.getRegion(), o -> true),
@@ -42,6 +43,7 @@ public class Operators{
                 alwaysUnlocked = true;
                 stars = 5;
                 maxExperience = 600;
+                portraitBust = "human-resources-department-rhyo-portrait-bust";
             }
         };
 

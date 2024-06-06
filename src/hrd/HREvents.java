@@ -16,7 +16,7 @@ public class HREvents{
         public DialogMessage(Operator sender, String text){
             this.sender = sender;
             this.text = text;
-            this.portrait = Core.atlas.find("human-resources-department-" + sender.name + "-portrait-bust");
+            this.portrait = Core.atlas.find(sender.portraitBust);
             this.callback = () -> {};
             this.lifetime = 10f;
         }
@@ -24,7 +24,7 @@ public class HREvents{
         public DialogMessage(Operator sender, String text, float lifetime){
             this.sender = sender;
             this.text = text;
-            this.portrait = Core.atlas.find("human-resources-department-" + sender.name + "-portrait-bust");
+            this.portrait = Core.atlas.find(sender.portraitBust);
             this.callback = () -> {};
             this.lifetime = lifetime;
         }

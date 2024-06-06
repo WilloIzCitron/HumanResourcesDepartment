@@ -58,6 +58,8 @@ public class Operator{
     public int sectorid = -1;
     public Planet planet;
     public int id;
+    public String portraitBust;
+    public String portraitFull;
 
 
     private static int nextid = 0;

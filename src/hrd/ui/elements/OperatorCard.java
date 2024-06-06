@@ -60,7 +60,7 @@ public class OperatorCard extends Table {
 
         // Character portrait
         Table portrait = new Table(t -> {
-            TextureRegion p = Core.atlas.find("human-resources-department-" + operator.name + "-portrait-bust", "human-resources-department-default-portrait");
+            TextureRegion p = Core.atlas.find(operator.portraitBust, "human-resources-department-default-portrait");
 
             t.background(new TextureRegionDrawable(p));
         });

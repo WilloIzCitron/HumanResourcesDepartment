@@ -31,7 +31,7 @@ public class HRLInstructions {
             if(reg.isobj && region != 0){
                 portrait = Core.atlas.find(LExecutor.PrintI.toString(reg.objval));
             }else{
-                portrait = Core.atlas.find("human-resources-department-" + (opr != 1 ? Operators.getByID(opr).name + "-portrait-bust" : "default-portrait"));
+                portrait = Core.atlas.find((opr != 1 ? Operators.getByID(opr).portraitBust : "default-portrait"));
             }
 
 

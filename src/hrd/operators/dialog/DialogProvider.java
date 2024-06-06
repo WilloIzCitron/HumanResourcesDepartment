@@ -39,7 +39,7 @@ public class DialogProvider{
     }
 
     public void sendMessage(String message, float lifetime, float delay){
-        sendMessage(message, "human-resources-department-" + operator.name + "-portrait-bust", () -> {}, lifetime, delay);
+        sendMessage(message, operator.portraitBust, () -> {}, lifetime, delay);
     }
 
     public void sendMessage(String message, String region, Runnable callback, float lifetime, float delay){
